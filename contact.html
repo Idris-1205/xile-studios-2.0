@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Xile Studios</title>
+  <meta name="description" content="Start an inquiry with Xile Studios and tell us about your website project." />
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo/favicon.ico?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/contact.css" />
+  <script defer src="js/loader.js"></script>
+  <script defer src="js/nav.js"></script>
+  <script defer src="js/reveal.js"></script>
+  <script defer src="js/url-prefill.js"></script>
+  <script defer src="js/contact-form.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body data-page="contact">
+  <div class="site-loader" aria-hidden="true">
+    <div class="site-loader__inner">
+      <div class="site-loader__mark">X</div>
+      <p class="site-loader__text">Xile Studios</p>
+    </div>
+  </div>
+
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar" aria-label="Main navigation">
+          <a class="brand" href="index.html" aria-label="Xile Studios home">
+            <img src="assets/images/logo/logo.png" alt="Xile Studios logo" class="brand__logo" />
+            <span class="brand__text">Xile Studios</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link" data-tooltip="Start here">Home</a>
+            <a href="about.html" class="nav-link" data-tooltip="Who we are">About</a>
+            <a href="services.html" class="nav-link" data-tooltip="What we offer">Services</a>
+            <a href="work.html" class="nav-link" data-tooltip="See our style">Recent Work</a>
+            <a href="contact.html" class="nav-link nav-link--cta is-active" data-tooltip="Let’s build">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-top-space">
+      <section class="section section--tight">
+        <div class="container contact-shell">
+          <div class="contact-shell__content reveal">
+            <span class="eyebrow">Start your inquiry</span>
+            <h1>Tell us what you need. We’ll take it from there.</h1>
+            <p>
+              Whether you need a landing page, a full business website, or a custom premium build, this is where the project starts.
+            </p>
+
+            <div class="contact-points">
+              <div class="contact-point">
+                <strong>Email</strong>
+                <a href="mailto:hello@xilestudios.ca">hello@xilestudios.ca</a>
+              </div>
+              <div class="contact-point">
+                <strong>Focus</strong>
+                <span>Fast, premium, conversion-focused websites</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-shell__form reveal reveal-delay-1">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input id="fullName" name="fullName" type="text" placeholder="Your full name" required />
+                <small class="error-text"></small>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="you@business.com" required />
+                  <small class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" placeholder="(123) 456-7890" required />
+                  <small class="error-text"></small>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="service">Service</label>
+                  <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="Landing Page">Landing Page</option>
+                    <option value="Business Website">Business Website</option>
+                    <option value="Custom Premium Build">Custom Premium Build</option>
+                  </select>
+                  <small class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="budget">Budget</label>
+                  <select id="budget" name="budget" required>
+                    <option value="">Select a budget</option>
+                    <option value="499-999">$499 - $999</option>
+                    <option value="1200-2500">$1,200 - $2,500</option>
+                    <option value="2500+">$2,500+</option>
+                  </select>
+                  <small class="error-text"></small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Details</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell us about your business, your goals, and what kind of website you need." required></textarea>
+                <small class="error-text"></small>
+              </div>
+
+              <button class="btn btn--primary btn--full" type="submit" id="submitButton">
+                Send Inquiry
+              </button>
+
+              <p class="form-status" id="formStatus" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand brand--footer" href="index.html">
+            <img src="assets/images/logo/logo.png" alt="Xile Studios logo" class="brand__logo" />
+            <span class="brand__text">Xile Studios</span>
+          </a>
+          <p class="footer__copy">Premium websites for brands that want to look stronger online.</p>
+        </div>
+        <div class="footer__links">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Recent Work</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__meta">
+          <a href="mailto:hello@xilestudios.ca">hello@xilestudios.ca</a>
+          <p>© <span id="year"></span> Xile Studios</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.about-story {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.about-story__content p + p {
+  margin-top: 1rem;
+}
+
+.stack-card {
+  min-height: 100%;
+}
+
+@media (max-width: 900px) {
+  .about-story {
+    grid-template-columns: 1fr;
+  }
+}

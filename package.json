@@ -1,0 +1,16 @@
+{
+  "name": "xile-studios",
+  "version": "1.0.0",
+  "description": "Plain HTML, CSS, and JavaScript multipage website for Xile Studios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "resend": "^6.9.4"
+  }
+}

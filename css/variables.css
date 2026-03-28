@@ -1,0 +1,28 @@
+:root {
+  --bg: #07070a;
+  --bg-soft: #0f1017;
+  --panel: rgba(18, 19, 28, 0.78);
+  --panel-strong: #11131c;
+  --panel-border: rgba(255, 255, 255, 0.08);
+  --text: #f5f7ff;
+  --text-soft: #b9bed1;
+  --text-muted: #8e95aa;
+  --white: #ffffff;
+  --purple: #8b5cf6;
+  --purple-2: #6d28d9;
+  --purple-3: #a855f7;
+  --success: #61d095;
+  --danger: #ff7b93;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  --shadow-soft: 0 16px 40px rgba(0, 0, 0, 0.22);
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --container: 1180px;
+  --header-h: 84px;
+  --transition: 240ms ease;
+  --gradient: linear-gradient(135deg, rgba(139, 92, 246, 0.95), rgba(109, 40, 217, 0.85));
+  --gradient-soft: radial-gradient(circle at top left, rgba(139, 92, 246, 0.24), transparent 34%),
+                   radial-gradient(circle at 85% 20%, rgba(168, 85, 247, 0.18), transparent 30%),
+                   radial-gradient(circle at 50% 100%, rgba(109, 40, 217, 0.12), transparent 30%);
+}

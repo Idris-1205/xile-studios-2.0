@@ -1,0 +1,36 @@
+.contact-shell {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.contact-shell__content {
+  position: sticky;
+  top: calc(var(--header-h) + 2rem);
+}
+
+.contact-points {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-point {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.contact-point strong {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .contact-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-shell__content {
+    position: static;
+  }
+}
