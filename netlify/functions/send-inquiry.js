@@ -23,7 +23,7 @@ export async function handler(event) {
       message = "",
     } = data;
 
-    const logoUrl = "https://xilestudios.ca/images/logo.png";
+    const logoUrl = "https://xilestudios.ca/assets/images/logo/logo.png";
 
     // EMAIL TO YOU
     await resend.emails.send({
