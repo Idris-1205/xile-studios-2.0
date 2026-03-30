@@ -75,7 +75,7 @@ export async function handler(event) {
       from: "Xile Studios <hello@xilestudios.ca>",
       to: email,
       subject: "We received your inquiry",
-      reply_to: "aidress.qadeer123@gmail.com",
+      replyTo: "aidress.qadeer123@gmail.com",
       html: `
       <div style="margin:0;padding:0;background:#0b0b0f;font-family:Inter,Arial,sans-serif;color:#e5e7eb;">
         <div style="max-width:640px;margin:0 auto;padding:32px 20px;">
